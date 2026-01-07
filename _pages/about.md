@@ -1,13 +1,17 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Ameya's Website"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Hey! Welcome to my website! My name is Ameya, and I am a graduate student specializing in **robotics and computer vision**, with a strong focus on **state estimation, perception, and sensor fusion for mobile robots**.
+
+I have built and analyzed end-to-end systems for **visual–inertial odometry (including a full MSCKF implementation)**, learning-based VIO, and **SLAM**, with experience working across simulation and real-world-inspired pipelines. My work also includes **NeRF-based 3D reconstruction**, optical flow–based motion segmentation, and deep learning models for geometry-aware perception.
+
+I enjoy implementation-driven research that bridges theory and practice, with an emphasis on **robustness, quantitative evaluation, and clean system design**. I am actively seeking roles in **robotics, perception, and computer vision** where I can contribute to building reliable autonomous systems.
 
 A data-driven personal website
 ======
