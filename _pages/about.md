@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Hey! Welcome to my website! My name is Ameya, and I am a graduate student specializing in **robotics and computer vision**, with a strong focus on **state estimation, perception, and sensor fusion for mobile robots**.
+Hey! Welcome to my website! My name is Ameya, and I am a graduate student specializing in **robotics and computer vision**, with a strong focus on **perception and sensor fusion for mobile robots**.
 
-I have built and analyzed end-to-end systems for **visual–inertial odometry (including a full MSCKF implementation)**, learning-based VIO, and **SLAM**, with experience working across simulation and real-world-inspired pipelines. My work also includes **NeRF-based 3D reconstruction**, optical flow–based motion segmentation, and deep learning models for geometry-aware perception.
+I have been a robotics enthusiast since my freshman year, where I worked on building an autonomous Formula FSAE vehicle from scratch. Since then, I have worked on and developed several advanced computer vision algorithms through my internships at [Symbotic](https://www.symbotic.com/) and [DEKA Research](https://dekaresearch.com/) and also via several projects.
 
-I enjoy implementation-driven research that bridges theory and practice, with an emphasis on **robustness, quantitative evaluation, and clean system design**. I am actively seeking roles in **robotics, perception, and computer vision** where I can contribute to building reliable autonomous systems.
+I am actively seeking roles in **robotics, perception, and computer vision** where I can contribute to building robust vision systems for reliable autonomy.
 
 A data-driven personal website
 ======
