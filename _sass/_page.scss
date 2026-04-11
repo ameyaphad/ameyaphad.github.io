@@ -476,3 +476,89 @@
     }
   }
 }
+
+
+/* ==========================================================================
+   PROJECTS PAGE
+   ========================================================================== */
+
+.project-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  /* Image column — width set inline via image_width in portfolio front matter */
+  &__img-col {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 200px;   /* outer cell; image scales inside via inline style */
+    padding-top: 0.15rem;
+
+    img {
+      display: block;
+      height: auto;
+      border-radius: $border-radius;
+      border: 1px solid $border-color;
+      margin: 0;
+    }
+  }
+
+  /* Placeholder shown when no teaser_image is set yet */
+  &__placeholder {
+    height: 130px;
+    background-color: mix(#fff, $border-color, 50%);
+    border: 1px dashed $border-color;
+    border-radius: $border-radius;
+  }
+
+  /* Text body */
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+    font-size: $type-size-3;
+    font-family: $sans-serif-narrow;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover {
+        text-decoration: underline;
+        color: $link-color-hover;
+      }
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: $type-size-5;
+    color: mix(#000, $text-color, 20%);
+    line-height: 1.6;
+  }
+
+  /* Stack on small screens */
+  @include breakpoint(max-width $small) {
+    flex-direction: column;
+
+    &__img-col {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    &__placeholder {
+      width: 100% !important;
+    }
+  }
+}

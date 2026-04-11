@@ -9,9 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="feature__wrapper">
-  {% assign project_posts = site.portfolio | sort: 'title' %}
-  {% for post in project_posts %}
-    {% include archive-single-project.html %}
-  {% endfor %}
-</div>
+{% assign sorted_projects = site.portfolio | sort: 'title' %}
+{% for proj in sorted_projects %}
+  {% include project-entry.html proj=proj %}
+{% endfor %}
