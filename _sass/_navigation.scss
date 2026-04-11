@@ -174,9 +174,6 @@
 
 .greedy-nav {
   position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
   min-width: 250px;
   background: $background-color;
 
@@ -192,18 +189,6 @@
     }
   }
 
-  /* Site title pinned to the left */
-  .masthead__site-title {
-    flex-shrink: 0;
-    margin: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0.5rem 0;
-    font-weight: 700;
-    font-size: 1em;
-    white-space: nowrap;
-  }
-
   button {
     position: absolute;
     height: 2.5rem;
@@ -217,15 +202,21 @@
     z-index: 100;
   }
 
-  /* Nav links fill the rest of the bar and are centered */
   .visible-links {
     display: flex;
-    flex: 1;
-    justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    justify-content: center;  /* center the 3 nav links */
+    width: 100%;
+
+    /* Site title: pulled out of flow so nav links can truly center */
+    li:first-child {
+      position: absolute;
+      left: 0;
+
+      a {
+        margin-left: 0;
+      }
+    }
 
     li {
       display: block;

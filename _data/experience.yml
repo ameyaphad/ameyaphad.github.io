@@ -11,8 +11,9 @@
   logo: "symbotic.png"
   logo_width: 130
   bullets:
-    - "Worked on LiDAR-based Collision Avoidance systems for mobile robots in warehouse environments."
-    - "Add more details about your contributions here."
+    - "Built a robust and effective Python module for performing online auto-calibration with purely 3D data from LiDAR, depth cameras for mobile robots in warehouse environments. Testing with real-world data on-site with Docker and ROS2 was done achieving sensor orientation accuracy within 0.5 degree."
+    - "Designed LiDAR-based **Collision Avoidance** systems for warehouse mobile robots in dynamic environments in a multi-robot system."
+    - "Developed robust tools in Python for performance evaluation of Collision Avoidance systems deployed on production. This involved extracting essential data from multiple modules using data scripts integrated with DVC, GCP and Snowflake and building effective visualizations for reliable data analysis"
 
 - role: "Computer Vision Intern"
   company: "DEKA Research"
@@ -21,25 +22,26 @@
   logo: "deka.png"
   logo_width: 130
   bullets:
-    - "Designed an imaging system for medical devices."
-    - "Add more details about your contributions here."
+    - "Designed an efficient vision system for real-time drop volume estimation using an infrared camera for medical IV infusion systems on limited compute."
+    - "The algorithm used optimized Sobel Edge Detection and Hough Transform algorithms to improve drop volume estimation by 10% for precise flow."
+    - "Developed an algorithm to auto-annotate drop images using RRT to train a Spline Estimation ML model for precise detection in harsh conditions."
 
-# - role: "Experience 3 Role"
-#   company: "Company 3"
-#   dates: "Month Year – Month Year"
-#   location: "City, ST"
-#   logo: "company3.png"
-#   logo_width: 130
-#   bullets:
-#     - "Describe your responsibilities or accomplishments here."
-#     - "Add another bullet point."
+- role: "Graduate Researcher"
+  company: "Adaptive and Intelligent Robotics (AIR) Lab, WPI"
+  dates: "Jan 2025 – May 2025"
+  location: "Worcester, MA"
+  logo: "airlab.png"
+  logo_width: 130
+  bullets:
+    - "Designed a novel vision pipeline that performs optimized and accurate 3D mapping of indoor objects using RGB Depth Camera for accurate grasping."
+    - "The algorithm leveraged isolation-Forest for filtering and optimizes Octree spatial partitioning using compact voxels to increase point cloud details."
+    - "The developed algorithm resulted in a 25% optimized and compressed Octree partitioned point cloud on the YCB Dataset, without loss of object details."
 
-# - role: "Experience 4 Role"
-#   company: "Company 4"
-#   dates: "Month Year – Month Year"
-#   location: "City, ST"
-#   logo: "company4.png"
-#   logo_width: 130
-#   bullets:
-#     - "Describe your responsibilities or accomplishments here."
-#     - "Add another bullet point."
+- role: "Software Engineer"
+  company: "Bajaj Finserv"
+  dates: "July 2023 – July 2024"
+  location: "Pune, India"
+  logo: "bajajfinance.png"
+  logo_width: 130
+  bullets:
+    - "Developed and deployed production-quality microservices for the Bajaj Finserv mobile application, contributing to a major user experience revamp that increased Personal Loans revenue by 7%, and integrating partners such as Google Pay, Navi, and Airtel to expand customer reach by 5%."
