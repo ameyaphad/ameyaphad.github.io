@@ -105,6 +105,52 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  /* About home: one paragraph + right-margin photo per row */
+  .about-with-photos {
+    margin: 0 0 0.5em;
+
+    &__row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(130px, 210px);
+      gap: 1rem 1.25rem;
+      align-items: start;
+      margin-bottom: 1.35rem;
+    }
+
+    &__text p {
+      margin-bottom: 0;
+    }
+
+    &__text p + p {
+      margin-top: 0.75em;
+    }
+
+    &__figure {
+      margin: 0;
+      line-height: 0;
+    }
+
+    &__figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      border: 1px solid $border-color;
+    }
+
+    @include breakpoint(max-width $small) {
+      &__row {
+        grid-template-columns: 1fr;
+      }
+
+      &__figure {
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }
 
 .page__hero {
