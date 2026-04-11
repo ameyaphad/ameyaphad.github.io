@@ -112,10 +112,14 @@
 
     &__row {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(130px, 210px);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 200px);
       gap: 1rem 1.25rem;
       align-items: start;
       margin-bottom: 1.35rem;
+    }
+
+    &__text {
+      min-width: 0;
     }
 
     &__text p {
@@ -126,15 +130,21 @@
       margin-top: 0.75em;
     }
 
-    &__figure {
+    /* Use .thumb not <figure> — theme's global `figure` rules break grid columns */
+    &__thumb {
+      display: block;
       margin: 0;
-      line-height: 0;
+      max-width: 200px;
+      width: 100%;
+      justify-self: end;
     }
 
-    &__figure img {
+    &__thumb img {
       display: block;
       width: 100%;
+      max-width: 200px;
       height: auto;
+      margin: 0;
       border-radius: $border-radius;
       border: 1px solid $border-color;
     }
@@ -144,10 +154,13 @@
         grid-template-columns: 1fr;
       }
 
-      &__figure {
-        max-width: 260px;
-        margin-left: auto;
-        margin-right: auto;
+      &__thumb {
+        justify-self: center;
+        max-width: 240px;
+      }
+
+      &__thumb img {
+        max-width: 240px;
       }
     }
   }
