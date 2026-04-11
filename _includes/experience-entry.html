@@ -1,0 +1,25 @@
+{% assign exp = include.exp %}
+
+<div class="exp-entry">
+  <div class="exp-entry__logo-col">
+    <img
+      src="{{ exp.logo | prepend: '/images/' | relative_url }}"
+      alt="{{ exp.company }} logo"
+      style="width: {{ exp.logo_width | default: 130 }}px; max-width: 100%;"
+      loading="lazy">
+  </div>
+
+  <div class="exp-entry__body">
+    <h3 class="exp-entry__role">{{ exp.role }}</h3>
+    <p class="exp-entry__meta">
+      <strong>{{ exp.company }}</strong>
+      &nbsp;·&nbsp; {{ exp.location }}
+      &nbsp;·&nbsp; <span class="exp-entry__dates">{{ exp.dates }}</span>
+    </p>
+    <ul class="exp-entry__bullets">
+      {% for bullet in exp.bullets %}
+        <li>{{ bullet | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+# Work experience entries — newest first.
+#
+# logo       : filename inside /images/  (e.g. symbotic.png)
+# logo_width : pixel width shown on the page — change this to resize a logo
+# bullets    : list of bullet-point strings (markdown supported inside each string)
+
+- role: "Perception Co-op"
+  company: "Symbotic"
+  dates: "Aug 2025 – Dec 2025"
+  location: "Wilmington, MA"
+  logo: "symbotic.png"
+  logo_width: 130
+  bullets:
+    - "Worked on LiDAR-based Collision Avoidance systems for mobile robots in warehouse environments."
+    - "Add more details about your contributions here."
+
+- role: "Computer Vision Intern"
+  company: "DEKA Research"
+  dates: "May 2025 – Aug 2025"
+  location: "Manchester, NH"
+  logo: "deka.png"
+  logo_width: 130
+  bullets:
+    - "Designed an imaging system for medical devices."
+    - "Add more details about your contributions here."
+
+# - role: "Experience 3 Role"
+#   company: "Company 3"
+#   dates: "Month Year – Month Year"
+#   location: "City, ST"
+#   logo: "company3.png"
+#   logo_width: 130
+#   bullets:
+#     - "Describe your responsibilities or accomplishments here."
+#     - "Add another bullet point."
+
+# - role: "Experience 4 Role"
+#   company: "Company 4"
+#   dates: "Month Year – Month Year"
+#   location: "City, ST"
+#   logo: "company4.png"
+#   logo_width: 130
+#   bullets:
+#     - "Describe your responsibilities or accomplishments here."
+#     - "Add another bullet point."

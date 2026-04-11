@@ -399,3 +399,80 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/* ==========================================================================
+   WORK EXPERIENCE PAGE
+   ========================================================================== */
+
+.exp-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  /* Logo column — width is controlled inline via logo_width in experience.yml */
+  &__logo-col {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 150px;   /* outer cell width — logo scales inside via inline style */
+    padding-top: 0.25rem;
+
+    img {
+      display: block;
+      height: auto;
+      border-radius: $border-radius;
+      /* override theme's global figure > img rules */
+      margin: 0;
+    }
+  }
+
+  /* Body — text content */
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__role {
+    margin: 0 0 0.2rem;
+    font-size: $type-size-4;
+    font-family: $sans-serif-narrow;
+  }
+
+  &__meta {
+    margin: 0 0 0.75rem;
+    font-size: $type-size-6;
+    color: $gray;
+  }
+
+  &__dates {
+    font-style: italic;
+  }
+
+  &__bullets {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: $type-size-5;
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+  }
+
+  /* Stack on small screens */
+  @include breakpoint(max-width $small) {
+    flex-direction: column;
+
+    &__logo-col {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+}
