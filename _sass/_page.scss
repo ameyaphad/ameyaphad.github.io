@@ -105,65 +105,6 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
-
-  /* About home: one paragraph + right-margin photo per row */
-  .about-with-photos {
-    margin: 0 0 0.5em;
-
-    &__row {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 200px);
-      gap: 1rem 1.25rem;
-      align-items: start;
-      margin-bottom: 1.35rem;
-    }
-
-    &__text {
-      min-width: 0;
-    }
-
-    &__text p {
-      margin-bottom: 0;
-    }
-
-    &__text p + p {
-      margin-top: 0.75em;
-    }
-
-    /* Use .thumb not <figure> — theme's global `figure` rules break grid columns */
-    &__thumb {
-      display: block;
-      margin: 0;
-      max-width: 200px;
-      width: 100%;
-      justify-self: end;
-    }
-
-    &__thumb img {
-      display: block;
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      margin: 0;
-      border-radius: $border-radius;
-      border: 1px solid $border-color;
-    }
-
-    @include breakpoint(max-width $small) {
-      &__row {
-        grid-template-columns: 1fr;
-      }
-
-      &__thumb {
-        justify-self: center;
-        max-width: 240px;
-      }
-
-      &__thumb img {
-        max-width: 240px;
-      }
-    }
-  }
 }
 
 .page__hero {
