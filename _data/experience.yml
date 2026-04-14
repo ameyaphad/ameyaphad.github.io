@@ -3,6 +3,7 @@
 # logo       : filename inside /images/  (e.g. symbotic.png)
 # logo_width : pixel width shown on the page — change this to resize a logo
 # bullets    : list of bullet-point strings (markdown supported inside each string)
+# skills     : list of skill tag strings shown below the bullets
 
 - role: "Perception Co-op"
   company: "Symbotic"
@@ -10,6 +11,16 @@
   location: "Wilmington, MA"
   logo: "symbotic.png"
   logo_width: 130
+  skills:
+    - OpenCV
+    - Python
+    - 3D Computer Vision
+    - LiDAR
+    - RGB-D Camera
+    - Sensor Calibration
+    - Sensor Integration
+    - Docker
+    - Mobile Robots
   bullets:
     - "Built a robust and effective Python module for performing online auto-calibration with purely 3D data from LiDAR, depth cameras for mobile robots in warehouse environments. Testing with real-world data on-site with Docker and ROS2 was done achieving sensor orientation accuracy within 0.5 degree."
     - "Designed LiDAR-based **Collision Avoidance** systems for warehouse mobile robots in dynamic environments in a multi-robot system."
@@ -21,6 +32,14 @@
   location: "Manchester, NH"
   logo: "deka.png"
   logo_width: 130
+  skills:
+    - OpenCV
+    - Computer Vision
+    - Python
+    - Infrared Camera
+    - Contour Analysis
+    - Image Processing
+    - Custom Dataset Generation
   bullets:
     - "Designed an efficient vision system for real-time drop volume estimation using an infrared camera for medical IV infusion systems on limited compute."
     - "The algorithm used optimized Sobel Edge Detection and Hough Transform algorithms to improve drop volume estimation by 10% for precise flow."
@@ -30,8 +49,17 @@
   company: "Adaptive and Intelligent Robotics (AIR) Lab, WPI"
   dates: "Jan 2025 – May 2025"
   location: "Worcester, MA"
+  advisor: "Prof. Jing Xiao"
+  advisor_url: "https://wp.wpi.edu/airlab/home/"
   logo: "airlab.png"
   logo_width: 130
+  skills:
+    - Python
+    - OpenCV
+    - 3D Computer Vision
+    - RGB-D Camera
+    - Machine Learning
+    - Point Cloud Processing
   bullets:
     - "Designed a novel vision pipeline that performs optimized and accurate 3D mapping of indoor objects using RGB Depth Camera for accurate grasping."
     - "The algorithm leveraged isolation-Forest for filtering and optimizes Octree spatial partitioning using compact voxels to increase point cloud details."
@@ -43,5 +71,16 @@
   location: "Pune, India"
   logo: "bajajfinance.png"
   logo_width: 130
+  skills:
+    - Java
+    - REST APIs
+    - Microservices
+    - Spring Boot
+    - Kafka
+    - Kubernetes
+    - Microsoft Azure
+    - Docker
+    - Git
+    - Unit Testing
   bullets:
     - "Developed and deployed production-quality microservices for the Bajaj Finserv mobile application, contributing to a major user experience revamp that increased Personal Loans revenue by 7%, and integrating partners such as Google Pay, Navi, and Airtel to expand customer reach by 5%."

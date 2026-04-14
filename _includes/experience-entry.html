@@ -16,6 +16,21 @@
       &nbsp;·&nbsp; {{ exp.location }}
       &nbsp;·&nbsp; <span class="exp-entry__dates">{{ exp.dates }}</span>
     </p>
+    {% if exp.advisor %}
+    <p class="exp-entry__advisor">
+      Advisor:
+      {% if exp.advisor_url %}
+        <a href="{{ exp.advisor_url }}" target="_blank" rel="noopener noreferrer">{{ exp.advisor }}</a>
+      {% else %}
+        {{ exp.advisor }}
+      {% endif %}
+    </p>
+    {% endif %}
+    {% if exp.skills %}
+    <p class="exp-entry__skills">
+      <strong>Skills:</strong> {{ exp.skills | join: " &middot; " }}
+    </p>
+    {% endif %}
     <ul class="exp-entry__bullets">
       {% for bullet in exp.bullets %}
         <li>{{ bullet | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>

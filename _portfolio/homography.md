@@ -6,7 +6,7 @@ permalink: /projects/homography/
 external_link: "https://github.com/ameyaphad/deep-homography-estimation"
 teaser_image: homography.png
 image_width: 180
-order: 5
+order: 6
 short_description: >
   PyTorch-based homography estimation and image stitching networks trained using both supervised and unsupervised learning on a custom dataset generated from MSCOCO, with a robust dataset generation pipeline.
 ---
