@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-{% assign sorted_projects = site.portfolio | sort: 'title' %}
+{% assign sorted_projects = site.portfolio | sort: 'order' %}
 {% for proj in sorted_projects %}
   {% include project-entry.html proj=proj %}
 {% endfor %}
