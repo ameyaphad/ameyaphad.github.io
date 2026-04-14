@@ -2,7 +2,7 @@
 title: "Navigation Stack for an Autonomous Formula SAE Vehicle"
 collection: portfolio
 permalink: /projects/fsaedv/
-teaser_image: fsaedv.jpg
+teaser_image: fsaedv.jpeg
 image_width: 180
 order: 5
 short_description: >
@@ -18,8 +18,8 @@ Designed the navigation stack for the vehicle, which involved building the perce
 Since the main obstacles in the Formula Student events were cones, the perception pipline's main job was depth estimation of these objects. A **custom object detector** was built using YOLOv3 and the [FSCOCO](https://github.com/fsoco/fsoco-dataset/) dataset, and monocular camera-based depth estimation was done using perspective projection and known size of the cone.
 
 <figure>
-  <img src="{{ '/images/perception_demo.gif' | relative_url }}" alt="Navigation stack demo" style="max-width: 720px; width: 100%;">
-  <figcaption>Navigation stack running in Gazebo simulation.</figcaption>
+  <img src="{{ '/images/perception_demo.gif' | relative_url }}" alt="YOLO demo" style="max-width: 720px; width: 100%;">
+  <figcaption>YOLO object detector demo using a laptop RGB camera</figcaption>
 </figure>
 
 
@@ -29,6 +29,6 @@ A robust sensor-fusion based Localization and SLAM pipeline was built which fuse
 Additionally, a robust data association module was constructed for the track cones by leveraging K-Means clustering.
 
 <figure>
-  <img src="{{ '/images/fsaedv-demo.gif' | relative_url }}" alt="Navigation stack demo" style="max-width: 720px; width: 100%;">
-  <figcaption>Navigation stack running in Gazebo simulation.</figcaption>
+  <img src="{{ '/images/SLAM-demo.gif' | relative_url }}" alt="SLAM demo" style="max-width: 720px; width: 100%;">
+  <figcaption>EKF Localization running integrated with the Planner in Simulation</figcaption>
 </figure>

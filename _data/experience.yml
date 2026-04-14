@@ -13,6 +13,7 @@
   logo_width: 130
   skills:
     - OpenCV
+    - ROS2
     - Python
     - 3D Computer Vision
     - LiDAR
@@ -22,9 +23,9 @@
     - Docker
     - Mobile Robots
   bullets:
-    - "Built a robust and effective Python module for performing online auto-calibration with purely 3D data from LiDAR, depth cameras for mobile robots in warehouse environments. Testing with real-world data on-site with Docker and ROS2 was done achieving sensor orientation accuracy within 0.5 degree."
+    - "Built a robust and effective Python module for performing **online auto-calibration** with purely 3D data from LiDAR, depth cameras for mobile robots in warehouse environments. Testing with real-world data on-site with Docker and ROS2 was done achieving sensor orientation accuracy within 0.5 degree."
     - "Designed LiDAR-based **Collision Avoidance** systems for warehouse mobile robots in dynamic environments in a multi-robot system."
-    - "Developed robust tools in Python for performance evaluation of Collision Avoidance systems deployed on production. This involved extracting essential data from multiple modules using data scripts integrated with DVC, GCP and Snowflake and building effective visualizations for reliable data analysis"
+    - "Developed robust tools in Python for **performance evaluation** of Collision Avoidance systems deployed on production. This involved extracting essential data from multiple modules using data scripts integrated with **DVC, GCP** and **Snowflake** and building effective **visualizations** for reliable data analysis"
 
 - role: "Computer Vision Intern"
   company: "DEKA Research"
@@ -41,9 +42,9 @@
     - Image Processing
     - Custom Dataset Generation
   bullets:
-    - "Designed an efficient vision system for real-time drop volume estimation using an infrared camera for medical IV infusion systems on limited compute."
+    - "Designed a vision system for real-time drop volume estimation using an infrared camera for medical IV infusion systems for limited compute devices."
     - "The algorithm used optimized Sobel Edge Detection and Hough Transform algorithms to improve drop volume estimation by 10% for precise flow."
-    - "Developed an algorithm to auto-annotate drop images using RRT to train a Spline Estimation ML model for precise detection in harsh conditions."
+    - "Developed an algorithm to auto-label drop images using RRT to train a Spline Estimation Segmentation model for precise detection in harsh conditions."
 
 - role: "Graduate Researcher"
   company: "Adaptive and Intelligent Robotics (AIR) Lab, WPI"
@@ -61,8 +62,8 @@
     - Machine Learning
     - Point Cloud Processing
   bullets:
-    - "Designed a novel vision pipeline that performs optimized and accurate 3D mapping of indoor objects using RGB Depth Camera for accurate grasping."
-    - "The algorithm leveraged isolation-Forest for filtering and optimizes Octree spatial partitioning using compact voxels to increase point cloud details."
+    - "Designed a **novel vision pipeline** that performs optimized and accurate 3D mapping of indoor objects using RGB Depth Camera for accurate grasping."
+    - "The algorithm leveraged **isolation-Forest** for filtering and optimizes **Octree** spatial partitioning using compact voxels to increase point cloud details."
     - "The developed algorithm resulted in a 25% optimized and compressed Octree partitioned point cloud on the YCB Dataset, without loss of object details."
 
 - role: "Software Engineer"
@@ -83,4 +84,6 @@
     - Git
     - Unit Testing
   bullets:
-    - "Developed and deployed production-quality microservices for the Bajaj Finserv mobile application, contributing to a major user experience revamp that increased Personal Loans revenue by 7%, and integrating partners such as Google Pay, Navi, and Airtel to expand customer reach by 5%."
+    - "Developed production-quality code for new features in Personal Loans modules and microservices by adding new API calls, database connections, and business logics, for a major user experience revamp, leading to an increase in revenue by 7%. The modules were deployed on a Kubernetes cluster."
+    - "Designed, developed and deployed a new microservice which was used by a Chatbot to store user information. Involved designing a pipeline which uploaded data using **multi-threading** to a remote **Azure Blob**. This helped launch the Chatbot feature, leading to an increase in customer reach by 5%."
+    - "Developed robust unit tests using **JUnit** framework for production microservices, and integrated them with **SonarQube** and into the CI/CD pipeline."
