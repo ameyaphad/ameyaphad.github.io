@@ -29,6 +29,6 @@ A robust sensor-fusion based Localization and SLAM pipeline was built which fuse
 Additionally, a robust data association module was constructed for the track cones by leveraging K-Means clustering.
 
 <figure>
-  <img src="{{ '/images/SLAM-demo.gif' | relative_url }}" alt="SLAM demo" style="max-width: 720px; width: 100%;">
+  <img src="{{ '/images/SLAM_demo.gif' | relative_url }}" alt="SLAM demo" style="max-width: 720px; width: 100%;">
   <figcaption>EKF Localization running integrated with the Planner in Simulation</figcaption>
 </figure>
