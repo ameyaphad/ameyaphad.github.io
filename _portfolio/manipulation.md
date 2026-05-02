@@ -1,5 +1,5 @@
 ---
-title: "Improved Vision-based Manipulation Framework for Accurate Grasping"
+title: "A Novel Vision-guided Manipulation Pipeline for Effective Grasping"
 collection: portfolio
 permalink: /projects/manipulation/
 # ↓ Replace with your actual GitHub repo URL
@@ -8,7 +8,7 @@ teaser_image: manipulation.jpg
 image_width: 180
 order: 1
 short_description: >
-  Vision-guided manipulation pipeline for accurate grasping of complex objects using RGB-D cameras, with antipodal and heuristic grasping algorithms on Octree-compressed point clouds.
+  Vision-guided manipulation pipeline for effective grasping of handle objects using purely point cloud data by leveraging an Octree compression algorithm.
 ---
 
 This project proposes a **novel vision-guided manipulation pipeline** used for grasping objects, especially common household objects with handles, using purely point clouds. There are 2 contributions to this project- a **novel vision pipeline** which uses an algorithm that performs an adaptive Octree partitioning of the object point cloud, and a **grasping algorithm** which leverages the features generated from this Octree generation to perform effective grasping.
@@ -16,7 +16,7 @@ This project proposes a **novel vision-guided manipulation pipeline** used for g
 The pipeline was tested on a **cooking pan** as can be seen in the gif below. Point cloud data was merged from 2 **Intel Realsense Depth Cameras**, and robotic grasping was performed using the **Franka Emika Panda Arm**.
 
 <figure>
-  <img src="{{ '/images/grasping_panda.gif' | relative_url }}" alt="grasping demo" style="max-width: 720px; width: 100%;">
+  <img src="{{ '/images/grasping_panda.gif' | relative_url }}" alt="grasping demo" style="max-width: 500px; width: 100%;">
   <figcaption>Handle Object Grasping Demo using Panda Robotic Arm</figcaption>
 </figure>
 
