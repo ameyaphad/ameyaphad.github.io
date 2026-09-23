@@ -1,5 +1,5 @@
 ---
-title: "A Novel Vision-guided Manipulation Pipeline for Effective Grasping"
+title: "A Novel Adaptive Octree-based Grasp Planning Pipeline for Grasping Novel Objects"
 collection: portfolio
 permalink: /projects/manipulation/
 # ↓ Replace with your actual GitHub repo URL
@@ -8,10 +8,10 @@ teaser_image: manipulation.jpg
 image_width: 180
 order: 1
 short_description: >
-  Vision-guided manipulation pipeline for effective grasping of handle objects using purely point cloud data by leveraging an Octree compression algorithm.
+  Vision-guided manipulation pipeline for effective grasping of novel objects using purely point cloud data by leveraging an adaptive Octree partitioning algorithm.
 ---
 
-This project proposes a **novel vision-guided manipulation pipeline** used for grasping objects, especially common household objects with handles, using purely point clouds. There are 2 contributions to this project- a **novel vision pipeline** which uses an algorithm that performs an adaptive Octree partitioning of the object point cloud, and a **grasping algorithm** which leverages the features generated from this Octree generation to perform effective grasping.
+This project proposes a **novel vision-guided manipulation pipeline** used for grasping objects, especially common household objects, using purely point clouds. There are 2 main contributions to this project- a **novel vision pipeline** which uses an algorithm that performs an adaptive Octree partitioning of the object point cloud, and a **grasping algorithm** which leverages the features generated from this Octree generation to perform effective grasping.
 
 The pipeline was tested on a **cooking pan** as can be seen in the gif below. Point cloud data was merged from 2 **Intel Realsense Depth Cameras**, and robotic grasping was performed using the **Franka Emika Panda Arm**.
 
@@ -34,7 +34,7 @@ The image below gives an overview of the vision pipeline. It takes in the object
 
 ## Grasping Pipeline
 
-The image below shows the flow of the grasping algorithm. It takes in the compressed Octree representation of the object, determines if the object requires simple grasping or not, and then based on that performs a handle region search and generates appropriate grasp poses.
+The image below shows the flow of the grasping algorithm. It takes in the compressed Octree representation of the object, determines the grasp strategy based on the semantic input, and then generates grasps in a specific region of the object. This grasp region is determined using the constructed Octree.
 
 <figure>
   <img src="{{ '/images/grasping.png' | relative_url }}" alt="grasping pipeline" style="max-width: 720px; width: 100%;">
