@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hey! Welcome to my website! My name is Ameya, and I recently graduated with my MS degree in **Robotics Engineering** from **Worcester Polyechnic Institute (WPI)**. My work spans various aspects of robotics- from navigation, to path planning, to perception, with a strong focus on designing 3D Computer Vision solutions for robot perception and manipulation.  
+Hey! Welcome to my website! My name is Ameya, and I am an MS graduate in **Robotics Engineering** from **Worcester Polyechnic Institute (WPI)**. My work spans various aspects of robotics- from navigation, to path planning, to perception, with a strong focus on designing 3D Computer Vision solutions for robot perception and manipulation.  
 
 I have been passionate about working on autonomous systems since my freshman year in undergrad, where I led a team of students to design an **autonomous Formula SAE car**. Working on every aspect of the vehicle, from designing the self-driving pipeline to working on integration aspects like drive-by-wire systems and CAN, motivated me to want to take a deeper dive into these systems. 
 
