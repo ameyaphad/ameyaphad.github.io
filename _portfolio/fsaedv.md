@@ -1,5 +1,5 @@
 ---
-title: "Navigation Stack for an Autonomous Formula SAE Vehicle"
+title: "Autonomy Stack for an Autonomous Formula SAE Vehicle"
 collection: portfolio
 permalink: /projects/fsaedv/
 teaser_image: fsaedv.jpeg
