@@ -13,6 +13,17 @@
   advisor_url: "https://wp.wpi.edu/airlab/home/"
   logo: "airlab.png"
   logo_width: 130
+  skills:
+    - Python
+    - C++
+    - MoveIt2
+    - ROS2
+    - 3D Computer Vision
+    - 3D Geometry
+    - Depth Camera
+    - Point Cloud Processing
+    - MuJoCo
+    - Robotic Manipulation
   bullets:
     - "Built an adaptive Octree-based **grasp-planning pipeline** that processed point cloud from **RGB-D camera**. Developed an adaptive Octree partitioning algorithm to identify grasp regions on the objects and generate grasp poses using the antipodal grasp condition. Work submitted to **ICRA 2027**"
     - "Integrated the algorithm with **Panda Robotic Arm** and **Intel RealSense Depth Camera**, with testing in **MuJoCo** sim with **ROS2**, **MoveIt2** integrations"
