@@ -47,7 +47,7 @@ The image below shows the flow of the grasping algorithm. It takes in the compre
 The GIF below shows an end-to-end grasping demo shown in the MuJoCo simulation with a sample YCB object. The grasp planning module was integrated with the simulator using **ROS2** and **MoveIt2**, which allowed an easy port of the pipeline from simulation to real-world testing on hardware.
 
 <figure>
-  <img src="{{ '/images/sim_demo.gif' | relative_url }}" alt="simtesting" style="max-width: 720px; width: 70%;">
+  <img src="{{ '/images/sim_demo.gif' | relative_url }}" alt="simtesting" style="max-width: 500px; width: 100%;">
   <figcaption>Simulation Testing in MuJoCo</figcaption>
 </figure>
 
